@@ -1,0 +1,2799 @@
+{
+    "input": {
+        "project": {
+            "name": "ProjectName30112020034751",
+            "type": "Internship",
+            "primaryLocationId": "Pdisd11TX1o",
+            "otherLocationIds": "Pdisd11TX1o",
+            "marketingLocationId": "Pdisd11TX1o",
+            "fieldRegionId": "BtTecBHmEck",
+            "mouStart": "2020-11-30",
+            "mouEnd": "2021-08-21",
+            "estimatedSubmission": "2020-12-07",
+            "sensitivity": "High",
+            "step": "EarlyConversations",
+            "tags": ehyid,
+            "financialReportReceivedAt": "2021-03-28T00:00:00.000+05:30"
+        }
+    }
+}
+-------------
+Query:
+
+mutation createProject($input: CreateProjectInput!) {
+  createProject(input: $input) {
+    project {
+      id
+      createdAt
+      canDelete
+      modifiedAt
+      avatarLetters
+      type
+      sensitivity
+      status
+      name {
+        value
+        canRead
+        canEdit
+      }
+      deptId {
+        value
+        canRead
+        canEdit
+      }
+      tags {
+        canRead
+        canEdit
+        value
+      }
+      financialReportReceivedAt {
+        canRead
+        canEdit
+        value
+      }
+      step {
+        value
+        canRead
+        canEdit
+      }
+      mouStart {
+        value
+        canRead
+        canEdit
+      }
+      mouEnd {
+        value
+        canRead
+        canEdit
+      }
+      estimatedSubmission {
+        value
+        canRead
+        canEdit
+      }
+
+      primaryLocation {
+        canEdit
+        canRead
+        value {
+          id
+          createdAt
+          canDelete
+          name {
+            value
+            canEdit
+            canRead
+          }
+          type {
+            value
+            canEdit
+            canRead
+          }
+          sensitivity
+          isoAlpha3 {
+            value
+            canEdit
+            canRead
+          }
+          fundingAccount {
+            value {
+              id
+              createdAt
+              canDelete
+              name {
+                value
+                canEdit
+                canRead
+              }
+              accountNumber {
+                value
+                canEdit
+                canRead
+              }
+            }
+            canEdit
+            canRead
+          }
+          isoCountry {
+            country
+            alpha2
+            alpha3
+            numeric
+          }
+        }
+      }
+      otherLocations {
+        items {
+          id
+          createdAt
+          canDelete
+          name {
+            value
+            canEdit
+            canRead
+          }
+          type {
+            value
+            canEdit
+            canRead
+          }
+          sensitivity
+          isoAlpha3 {
+            value
+            canEdit
+            canRead
+          }
+          fundingAccount {
+            value {
+              id
+              createdAt
+              canDelete
+              name {
+                value
+                canEdit
+                canRead
+              }
+              accountNumber {
+                value
+                canEdit
+                canRead
+              }
+            }
+            canEdit
+            canRead
+          }
+          isoCountry {
+            country
+            alpha2
+            alpha3
+            numeric
+          }
+        }
+        total
+        hasMore
+        canRead
+        canCreate
+      }
+      marketingLocation {
+        value {
+          id
+          createdAt
+          canDelete
+          name {
+            value
+            canEdit
+            canRead
+          }
+          type {
+            value
+            canEdit
+            canRead
+          }
+          sensitivity
+          isoAlpha3 {
+            value
+            canEdit
+            canRead
+          }
+          fundingAccount {
+            value {
+              id
+              createdAt
+              canDelete
+              name {
+                value
+                canEdit
+                canRead
+              }
+              accountNumber {
+                value
+                canEdit
+                canRead
+              }
+            }
+            canEdit
+            canRead
+          }
+          isoCountry {
+            country
+            alpha2
+            alpha3
+            numeric
+          }
+        }
+        canEdit
+        canRead
+      }
+      fieldRegion {
+        canEdit
+        canRead
+        value {
+          id
+          createdAt
+          canDelete
+          name {
+            value
+            canEdit
+            canRead
+          }
+          director {
+            canEdit
+            canRead
+            value {
+              id
+              fullName
+              firstName
+              avatarLetters
+              createdAt
+              email {
+                canRead
+                canEdit
+                value
+              }
+              realFirstName {
+                canRead
+                canEdit
+                value
+              }
+              realLastName {
+                canRead
+                canEdit
+                value
+              }
+              displayFirstName {
+                canRead
+                canEdit
+                value
+              }
+              displayLastName {
+                canRead
+                canEdit
+                value
+              }
+              phone {
+                canRead
+                canEdit
+                value
+              }
+              about {
+                canRead
+                canEdit
+                value
+              }
+              status {
+                canRead
+                canEdit
+                value
+              }
+              roles {
+                canRead
+                canEdit
+                value
+              }
+              title {
+                canRead
+                canEdit
+                value
+              }
+              timezone {
+                canRead
+                canEdit
+                value {
+                  name
+                  lat
+                  long
+                  countries {
+                    code
+                    name
+                    zones {
+                      name
+                      lat
+                      long
+                      countries {
+                        code
+                      }
+                    }
+                  }
+                }
+              }
+              unavailabilities {
+                canRead
+                total
+                hasMore
+                canCreate
+                items {
+                  id
+                  createdAt
+                  
+                  description {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  start
+                  end
+                }
+              }
+              organizations {
+                canRead
+                total
+                hasMore
+                canCreate
+                items {
+                  id
+                  createdAt
+                  name {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  avatarLetters
+                }
+              }
+              education {
+                total
+                hasMore
+                canCreate
+                canRead
+                items {
+                  id
+                  createdAt
+                  degree {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  major {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  institution {
+                    canRead
+                    canEdit
+                    value
+                  }
+                }
+              }
+            }
+          }
+          fieldZone {
+            canEdit
+            canRead
+            value {
+              id
+              createdAt
+              canDelete
+              name {
+                value
+                canEdit
+                canRead
+              }
+              director {
+                value {
+                  id
+                  fullName
+                  firstName
+                  avatarLetters
+                  createdAt
+                  email {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  realFirstName {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  realLastName {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  displayFirstName {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  displayLastName {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  phone {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  about {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  status {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  roles {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  title {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  timezone {
+                    canRead
+                    canEdit
+                    value {
+                      name
+                      lat
+                      long
+                      countries {
+                        code
+                        name
+                        zones {
+                          name
+                          lat
+                          long
+                          countries {
+                            code
+                          }
+                        }
+                      }
+                    }
+                  }
+                  unavailabilities {
+                    canRead
+                    items {
+                      id
+                      createdAt
+                      canDelete
+                      description {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      start
+                      end
+                    }
+                    total
+                    hasMore
+                    canCreate
+                  }
+                  organizations {
+                    canRead
+                    items {
+                      id
+                      createdAt
+                      name {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      avatarLetters
+                    }
+                    total
+                    hasMore
+                    canCreate
+                  }
+                  education {
+                    canRead
+                    items {
+                      id
+                      createdAt
+                      degree {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      major {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      institution {
+                        canRead
+                        canEdit
+                        value
+                      }
+                    }
+                    total
+                    hasMore
+                    canCreate
+                  }
+                }
+                canEdit
+                canRead
+              }
+            }
+          }
+        }
+      }
+      owningOrganization {
+        canEdit
+        canRead
+        value {
+          id
+          createdAt
+          canDelete
+          name {
+            value
+            canEdit
+            canRead
+          }
+          address {
+            value
+            canEdit
+            canRead
+          }
+          avatarLetters
+          locations {
+            total
+            hasMore
+            items {
+              id
+              createdAt
+              name {
+                value
+                canEdit
+                canRead
+              }
+              type {
+                value
+                canEdit
+                canRead
+              }
+              sensitivity
+              isoAlpha3 {
+                value
+                canEdit
+                canRead
+              }
+              isoCountry {
+                country
+                alpha2
+                alpha3
+                numeric
+              }
+              fundingAccount {
+                value {
+                  id
+                  createdAt
+                  name {
+                    value
+                    canEdit
+                    canRead
+                  }
+                  accountNumber {
+                    value
+                    canEdit
+                    canRead
+                  }
+                }
+                canEdit
+                canRead
+              }
+            }
+          }
+        }
+      }
+      team {
+        total
+        hasMore
+        canCreate
+        canRead
+        items {
+          id
+          createdAt
+          modifiedAt
+          user {
+            value {
+              id
+              fullName
+              firstName
+              avatarLetters
+              createdAt
+              email {
+                canRead
+                canEdit
+                value
+              }
+              realFirstName {
+                canRead
+                canEdit
+                value
+              }
+              realLastName {
+                canRead
+                canEdit
+                value
+              }
+              displayFirstName {
+                canRead
+                canEdit
+                value
+              }
+              displayLastName {
+                canRead
+                canEdit
+                value
+              }
+              phone {
+                canRead
+                canEdit
+                value
+              }
+              about {
+                canRead
+                canEdit
+                value
+              }
+              status {
+                canRead
+                canEdit
+                value
+              }
+              roles {
+                canRead
+                canEdit
+                value
+              }
+              title {
+                canRead
+                canEdit
+                value
+              }
+              timezone {
+                canRead
+                canEdit
+                value {
+                  name
+                  lat
+                  long
+                  countries {
+                    code
+                    name
+                    zones {
+                      name
+                      lat
+                      long
+                      countries {
+                        code
+                      }
+                    }
+                  }
+                }
+              }
+              unavailabilities {
+                canRead
+                items {
+                  id
+                  createdAt
+                  description {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  start
+                  end
+                }
+                total
+                hasMore
+                canCreate
+              }
+              organizations {
+                canRead
+                items {
+                  id
+                  createdAt
+                  name {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  avatarLetters
+                }
+                total
+                hasMore
+                canCreate
+              }
+              education {
+                canRead
+                items {
+                  id
+                  createdAt
+                  degree {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  major {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  institution {
+                    canRead
+                    canEdit
+                    value
+                  }
+                }
+                total
+                hasMore
+                canCreate
+              }
+            }
+            canRead
+            canEdit
+          }
+          roles {
+            value
+            canRead
+            canEdit
+          }
+        }
+      }
+      engagements {
+        total
+        hasMore
+        canCreate
+        canRead
+        items {
+          id
+          createdAt
+          status {
+            canEdit
+            canRead
+            value
+            transitions {
+              to
+              label
+              type
+            }
+          }
+          ceremony {
+            value {
+              id
+              createdAt
+              type
+              planned {
+                value
+                canRead
+                canEdit
+              }
+              estimatedDate {
+                value
+                canRead
+                canEdit
+              }
+              actualDate {
+                value
+                canRead
+                canEdit
+              }
+            }
+            canRead
+            canEdit
+          }
+          completeDate {
+            value
+            canRead
+            canEdit
+          }
+          disbursementCompleteDate {
+            value
+            canRead
+            canEdit
+          }
+          communicationsCompleteDate {
+            value
+            canRead
+            canEdit
+          }
+          startDate {
+            value
+            canRead
+            canEdit
+          }
+          endDate {
+            value
+            canRead
+            canEdit
+          }
+          initialEndDate {
+            value
+            canRead
+            canEdit
+          }
+          lastSuspendedAt {
+            value
+            canRead
+            canEdit
+          }
+          lastReactivatedAt {
+            value
+            canRead
+            canEdit
+          }
+          statusModifiedAt {
+            value
+            canRead
+            canEdit
+          }
+          modifiedAt
+        }
+      }
+      budget {
+        value {
+          id
+          createdAt
+          status
+          records {
+            id
+            createdAt
+            fiscalYear {
+              value
+              canRead
+              canEdit
+            }
+            amount {
+              value
+              canRead
+              canEdit
+            }
+          }
+          total
+        }
+        canRead
+        canEdit
+      }
+      partnerships {
+        canRead
+        hasMore
+        canCreate
+        total
+        items {
+          id
+          createdAt
+          agreementStatus {
+            value
+            canRead
+            canEdit
+          }
+          mouStatus {
+            value
+            canRead
+            canEdit
+          }
+          mouStart {
+            value
+            canRead
+            canEdit
+          }
+          mouEnd {
+            value
+            canRead
+            canEdit
+          }
+
+          types {
+            value
+            canRead
+            canEdit
+          }
+          mou {
+            value {
+              id
+              createdAt
+              type
+
+              mimeType
+              name
+              size
+              modifiedAt
+              downloadUrl
+              createdBy {
+                id
+                fullName
+                firstName
+                avatarLetters
+                createdAt
+                email {
+                  canRead
+                  canEdit
+                  value
+                }
+                realFirstName {
+                  canRead
+                  canEdit
+                  value
+                }
+                realLastName {
+                  canRead
+                  canEdit
+                  value
+                }
+                displayFirstName {
+                  canRead
+                  canEdit
+                  value
+                }
+                displayLastName {
+                  canRead
+                  canEdit
+                  value
+                }
+                phone {
+                  canRead
+                  canEdit
+                  value
+                }
+                about {
+                  canRead
+                  canEdit
+                  value
+                }
+                status {
+                  canRead
+                  canEdit
+                  value
+                }
+                roles {
+                  canRead
+                  canEdit
+                  value
+                }
+                title {
+                  canRead
+                  canEdit
+                  value
+                }
+                timezone {
+                  canRead
+                  canEdit
+                  value {
+                    name
+                    lat
+                    long
+                    countries {
+                      code
+                      name
+                      zones {
+                        name
+                        lat
+                        long
+                        countries {
+                          code
+                        }
+                      }
+                    }
+                  }
+                }
+                unavailabilities {
+                  canRead
+                  items {
+                    id
+                    createdAt
+                    description {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    start
+                    end
+                  }
+                  total
+                  hasMore
+                  canCreate
+                }
+                organizations {
+                  canRead
+                  items {
+                    id
+                    createdAt
+                    name {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    avatarLetters
+                  }
+                  total
+                  hasMore
+                  canCreate
+                }
+                education {
+                  canRead
+                  items {
+                    id
+                    createdAt
+                    degree {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    major {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    institution {
+                      canRead
+                      canEdit
+                      value
+                    }
+                  }
+                  total
+                  hasMore
+                  canCreate
+                }
+              }
+              modifiedBy {
+                id
+                createdAt
+                email {
+                  value
+                  canRead
+                  canEdit
+                }
+                realFirstName {
+                  value
+                  canRead
+                  canEdit
+                }
+                realLastName {
+                  value
+                  canRead
+                  canEdit
+                }
+                displayFirstName {
+                  value
+                  canRead
+                  canEdit
+                }
+                displayLastName {
+                  value
+                  canRead
+                  canEdit
+                }
+                phone {
+                  value
+                  canRead
+                  canEdit
+                }
+                timezone {
+                  value {
+                    name
+                    lat
+                    long
+                    countries {
+                      code
+                      name
+                      zones {
+                        name
+                        lat
+                        long
+                        countries {
+                          code
+                        }
+                      }
+                    }
+                  }
+                  canRead
+                  canEdit
+                }
+                about {
+                  value
+                  canRead
+                  canEdit
+                }
+                status {
+                  value
+                  canRead
+                  canEdit
+                }
+                fullName
+                firstName
+                avatarLetters
+                unavailabilities {
+                  canRead
+                  hasMore
+                  canCreate
+                  total
+                  items {
+                    id
+                    createdAt
+                    description {
+                      value
+                      canRead
+                      canEdit
+                    }
+                    start
+                    end
+                  }
+                }
+                organizations {
+                  canRead
+                  hasMore
+                  canCreate
+                  total
+                  items {
+                    id
+                    createdAt
+                    name {
+                      value
+                      canRead
+                      canEdit
+                    }
+                    avatarLetters
+                  }
+                }
+                education {
+                  canRead
+                  hasMore
+                  canCreate
+                  total
+                  items {
+                    id
+                    createdAt
+                    degree {
+                      value
+                      canRead
+                      canEdit
+                    }
+                    major {
+                      value
+                      canRead
+                      canEdit
+                    }
+                    institution {
+                      value
+                      canRead
+                      canEdit
+                    }
+                  }
+                }
+              }
+              children {
+                items {
+                  id
+                  createdAt
+                  type
+
+                  name
+                  createdBy {
+                    id
+                    fullName
+                    firstName
+                    avatarLetters
+                    createdAt
+                    email {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    realFirstName {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    realLastName {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    displayFirstName {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    displayLastName {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    phone {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    about {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    status {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    roles {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    title {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    timezone {
+                      canRead
+                      canEdit
+                      value {
+                        name
+                        lat
+                        long
+                        countries {
+                          code
+                          name
+                          zones {
+                            name
+                            lat
+                            long
+                            countries {
+                              code
+                            }
+                          }
+                        }
+                      }
+                    }
+                    unavailabilities {
+                      canRead
+                      items {
+                        id
+                        createdAt
+                        description {
+                          canRead
+                          canEdit
+                          value
+                        }
+                        start
+                        end
+                      }
+                      total
+                      hasMore
+                      canCreate
+                    }
+                    organizations {
+                      canRead
+                      items {
+                        id
+                        createdAt
+                        name {
+                          canRead
+                          canEdit
+                          value
+                        }
+                        avatarLetters
+                      }
+                      total
+                      hasMore
+                      canCreate
+                    }
+                    education {
+                      canRead
+                      items {
+                        id
+                        createdAt
+                        degree {
+                          canRead
+                          canEdit
+                          value
+                        }
+                        major {
+                          canRead
+                          canEdit
+                          value
+                        }
+                        institution {
+                          canRead
+                          canEdit
+                          value
+                        }
+                      }
+                      total
+                      hasMore
+                      canCreate
+                    }
+                  }
+                  parents {
+                    id
+                    createdAt
+                    type
+
+                    name
+                    parents {
+                      id
+                      type
+                    }
+                    createdBy {
+                      id
+                      fullName
+                      firstName
+                      avatarLetters
+                      createdAt
+                      email {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      realFirstName {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      realLastName {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      displayFirstName {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      displayLastName {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      phone {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      about {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      status {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      roles {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      title {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      timezone {
+                        canRead
+                        canEdit
+                        value {
+                          name
+                          lat
+                          long
+                          countries {
+                            code
+                            name
+                            zones {
+                              name
+                              lat
+                              long
+                              countries {
+                                code
+                              }
+                            }
+                          }
+                        }
+                      }
+                      unavailabilities {
+                        canRead
+                        items {
+                          id
+                          createdAt
+                          description {
+                            canRead
+                            canEdit
+                            value
+                          }
+                          start
+                          end
+                        }
+                        total
+                        hasMore
+                        canCreate
+                      }
+                      organizations {
+                        canRead
+                        items {
+                          id
+                          createdAt
+                          name {
+                            canRead
+                            canEdit
+                            value
+                          }
+                          avatarLetters
+                        }
+                        total
+                        hasMore
+                        canCreate
+                      }
+                      education {
+                        canRead
+                        items {
+                          id
+                          createdAt
+                          degree {
+                            canRead
+                            canEdit
+                            value
+                          }
+                          major {
+                            canRead
+                            canEdit
+                            value
+                          }
+                          institution {
+                            canRead
+                            canEdit
+                            value
+                          }
+                        }
+                        total
+                        hasMore
+                        canCreate
+                      }
+                    }
+                  }
+                }
+                total
+                hasMore
+              }
+              parents {
+                id
+                createdAt
+                type
+
+                name
+                parents {
+                  id
+                  type
+                  # also contains other fields as parent 'Parents'
+                }
+                createdBy {
+                  id
+                  fullName
+                  firstName
+                  avatarLetters
+                  createdAt
+                  email {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  realFirstName {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  realLastName {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  displayFirstName {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  displayLastName {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  phone {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  about {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  status {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  roles {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  title {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  timezone {
+                    canRead
+                    canEdit
+                    value {
+                      name
+                      lat
+                      long
+                      countries {
+                        code
+                        name
+                        zones {
+                          name
+                          lat
+                          long
+                          countries {
+                            code
+                          }
+                        }
+                      }
+                    }
+                  }
+                  unavailabilities {
+                    canRead
+                    items {
+                      id
+                      createdAt
+                      description {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      start
+                      end
+                    }
+                    total
+                    hasMore
+                    canCreate
+                  }
+                  organizations {
+                    canRead
+                    items {
+                      id
+                      createdAt
+                      name {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      avatarLetters
+                    }
+                    total
+                    hasMore
+                    canCreate
+                  }
+                  education {
+                    canRead
+                    items {
+                      id
+                      createdAt
+                      degree {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      major {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      institution {
+                        canRead
+                        canEdit
+                        value
+                      }
+                    }
+                    total
+                    hasMore
+                    canCreate
+                  }
+                }
+              }
+            }
+            canRead
+            canEdit
+          }
+          agreement {
+            value {
+              id
+              createdAt
+              type
+
+              name
+              parents {
+                id
+                createdAt
+                type
+
+                name
+                createdBy {
+                  id
+                  fullName
+                  firstName
+                  avatarLetters
+                  createdAt
+                  email {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  realFirstName {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  realLastName {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  displayFirstName {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  displayLastName {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  phone {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  about {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  status {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  roles {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  title {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  timezone {
+                    canRead
+                    canEdit
+                    value {
+                      name
+                      lat
+                      long
+                      countries {
+                        code
+                        name
+                        zones {
+                          name
+                          lat
+                          long
+                          countries {
+                            code
+                          }
+                        }
+                      }
+                    }
+                  }
+                  unavailabilities {
+                    canRead
+                    items {
+                      id
+                      createdAt
+                      description {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      start
+                      end
+                    }
+                    total
+                    hasMore
+                    canCreate
+                  }
+                  organizations {
+                    canRead
+                    items {
+                      id
+                      createdAt
+                      name {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      avatarLetters
+                    }
+                    total
+                    hasMore
+                    canCreate
+                  }
+                  education {
+                    canRead
+                    items {
+                      id
+                      createdAt
+                      degree {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      major {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      institution {
+                        canRead
+                        canEdit
+                        value
+                      }
+                    }
+                    total
+                    hasMore
+                    canCreate
+                  }
+                }
+                parents {
+                  id
+                  type
+                  # also contains other fields as parent 'Parents'
+                }
+              }
+              createdBy {
+                id
+                fullName
+                firstName
+                avatarLetters
+                createdAt
+                email {
+                  canRead
+                  canEdit
+                  value
+                }
+                realFirstName {
+                  canRead
+                  canEdit
+                  value
+                }
+                realLastName {
+                  canRead
+                  canEdit
+                  value
+                }
+                displayFirstName {
+                  canRead
+                  canEdit
+                  value
+                }
+                displayLastName {
+                  canRead
+                  canEdit
+                  value
+                }
+                phone {
+                  canRead
+                  canEdit
+                  value
+                }
+                about {
+                  canRead
+                  canEdit
+                  value
+                }
+                status {
+                  canRead
+                  canEdit
+                  value
+                }
+                roles {
+                  canRead
+                  canEdit
+                  value
+                }
+                title {
+                  canRead
+                  canEdit
+                  value
+                }
+                timezone {
+                  canRead
+                  canEdit
+                  value {
+                    name
+                    lat
+                    long
+                    countries {
+                      code
+                      name
+                      zones {
+                        name
+                        lat
+                        long
+                        countries {
+                          code
+                        }
+                      }
+                    }
+                  }
+                }
+                unavailabilities {
+                  canRead
+                  items {
+                    id
+                    createdAt
+                    description {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    start
+                    end
+                  }
+                  total
+                  hasMore
+                  canCreate
+                }
+                organizations {
+                  canRead
+                  items {
+                    id
+                    createdAt
+                    name {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    avatarLetters
+                  }
+                  total
+                  hasMore
+                  canCreate
+                }
+                education {
+                  canRead
+                  items {
+                    id
+                    createdAt
+                    degree {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    major {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    institution {
+                      canRead
+                      canEdit
+                      value
+                    }
+                  }
+                  total
+                  hasMore
+                  canCreate
+                }
+              }
+              mimeType
+              size
+              modifiedAt
+              modifiedBy {
+                id
+                createdAt
+                email {
+                  value
+                  canRead
+                  canEdit
+                }
+                realFirstName {
+                  value
+                  canRead
+                  canEdit
+                }
+                realLastName {
+                  value
+                  canRead
+                  canEdit
+                }
+                displayFirstName {
+                  value
+                  canRead
+                  canEdit
+                }
+                displayLastName {
+                  value
+                  canRead
+                  canEdit
+                }
+                phone {
+                  value
+                  canRead
+                  canEdit
+                }
+                timezone {
+                  value {
+                    name
+                    lat
+                    long
+                    countries {
+                      code
+                      name
+                      zones {
+                        name
+                        lat
+                        long
+                        countries {
+                          code
+                        }
+                      }
+                    }
+                  }
+                  canRead
+                  canEdit
+                }
+                about {
+                  value
+                  canRead
+                  canEdit
+                }
+                status {
+                  value
+                  canRead
+                  canEdit
+                }
+                fullName
+                firstName
+                avatarLetters
+                unavailabilities {
+                  canRead
+                  hasMore
+                  canCreate
+                  total
+                  items {
+                    id
+                    createdAt
+                    description {
+                      value
+                      canRead
+                      canEdit
+                    }
+                    start
+                    end
+                  }
+                }
+                organizations {
+                  canRead
+                  hasMore
+                  canCreate
+                  total
+                  items {
+                    id
+                    createdAt
+                    name {
+                      value
+                      canRead
+                      canEdit
+                    }
+                    avatarLetters
+                  }
+                }
+                education {
+                  canRead
+                  hasMore
+                  canCreate
+                  total
+                  items {
+                    id
+                    createdAt
+                    degree {
+                      value
+                      canRead
+                      canEdit
+                    }
+                    major {
+                      value
+                      canRead
+                      canEdit
+                    }
+                    institution {
+                      value
+                      canRead
+                      canEdit
+                    }
+                  }
+                }
+              }
+              children {
+                total
+                hasMore
+                items {
+                  id
+                  createdAt
+                  type
+
+                  name
+                  createdBy {
+                    id
+                    fullName
+                    firstName
+                    avatarLetters
+                    createdAt
+                    email {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    realFirstName {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    realLastName {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    displayFirstName {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    displayLastName {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    phone {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    about {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    status {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    roles {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    title {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    timezone {
+                      canRead
+                      canEdit
+                      value {
+                        name
+                        lat
+                        long
+                        countries {
+                          code
+                          name
+                          zones {
+                            name
+                            lat
+                            long
+                            countries {
+                              code
+                            }
+                          }
+                        }
+                      }
+                    }
+                    unavailabilities {
+                      canRead
+                      items {
+                        id
+                        createdAt
+                        description {
+                          canRead
+                          canEdit
+                          value
+                        }
+                        start
+                        end
+                      }
+                      total
+                      hasMore
+                      canCreate
+                    }
+                    organizations {
+                      canRead
+                      items {
+                        id
+                        createdAt
+                        name {
+                          canRead
+                          canEdit
+                          value
+                        }
+                        avatarLetters
+                      }
+                      total
+                      hasMore
+                      canCreate
+                    }
+                    education {
+                      canRead
+                      items {
+                        id
+                        createdAt
+                        degree {
+                          canRead
+                          canEdit
+                          value
+                        }
+                        major {
+                          canRead
+                          canEdit
+                          value
+                        }
+                        institution {
+                          canRead
+                          canEdit
+                          value
+                        }
+                      }
+                      total
+                      hasMore
+                      canCreate
+                    }
+                  }
+                  parents {
+                    id
+                    createdAt
+                    type
+
+                    name
+                    createdBy {
+                      id
+                      fullName
+                      firstName
+                      avatarLetters
+                      createdAt
+                      email {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      realFirstName {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      realLastName {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      displayFirstName {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      displayLastName {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      phone {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      about {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      status {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      roles {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      title {
+                        canRead
+                        canEdit
+                        value
+                      }
+                      timezone {
+                        canRead
+                        canEdit
+                        value {
+                          name
+                          lat
+                          long
+                          countries {
+                            code
+                            name
+                            zones {
+                              name
+                              lat
+                              long
+                              countries {
+                                code
+                              }
+                            }
+                          }
+                        }
+                      }
+                      unavailabilities {
+                        canRead
+                        items {
+                          id
+                          createdAt
+                          description {
+                            canRead
+                            canEdit
+                            value
+                          }
+                          start
+                          end
+                        }
+                        total
+                        hasMore
+                        canCreate
+                      }
+                      organizations {
+                        canRead
+                        items {
+                          id
+                          createdAt
+                          name {
+                            canRead
+                            canEdit
+                            value
+                          }
+                          avatarLetters
+                        }
+                        total
+                        hasMore
+                        canCreate
+                      }
+                      education {
+                        canRead
+                        items {
+                          id
+                          createdAt
+                          degree {
+                            canRead
+                            canEdit
+                            value
+                          }
+                          major {
+                            canRead
+                            canEdit
+                            value
+                          }
+                          institution {
+                            canRead
+                            canEdit
+                            value
+                          }
+                        }
+                        total
+                        hasMore
+                        canCreate
+                      }
+                    }
+                    parents {
+                      id
+                      type
+                      # also contains other fields as parent 'Parents'
+                    }
+                  }
+                }
+              }
+
+              downloadUrl
+            }
+            canRead
+            canEdit
+          }
+        }
+      }
+      rootDirectory {
+        canEdit
+        canRead
+        value {
+          id
+          createdAt
+          type
+
+          name
+          parents {
+            id
+            createdAt
+            type
+
+            name
+            parents {
+              id
+              name
+              type
+              # also contains other fields as parent 'parents'
+            }
+            createdBy {
+              id
+              fullName
+              firstName
+              avatarLetters
+              createdAt
+              email {
+                canRead
+                canEdit
+                value
+              }
+              realFirstName {
+                canRead
+                canEdit
+                value
+              }
+              realLastName {
+                canRead
+                canEdit
+                value
+              }
+              displayFirstName {
+                canRead
+                canEdit
+                value
+              }
+              displayLastName {
+                canRead
+                canEdit
+                value
+              }
+              phone {
+                canRead
+                canEdit
+                value
+              }
+              about {
+                canRead
+                canEdit
+                value
+              }
+              status {
+                canRead
+                canEdit
+                value
+              }
+              roles {
+                canRead
+                canEdit
+                value
+              }
+              title {
+                canRead
+                canEdit
+                value
+              }
+              timezone {
+                canRead
+                canEdit
+                value {
+                  name
+                  lat
+                  long
+                  countries {
+                    code
+                    name
+                    zones {
+                      name
+                      lat
+                      long
+                      countries {
+                        code
+                      }
+                    }
+                  }
+                }
+              }
+              unavailabilities {
+                canRead
+                items {
+                  id
+                  createdAt
+                  description {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  start
+                  end
+                }
+                total
+                hasMore
+                canCreate
+              }
+              organizations {
+                canRead
+                items {
+                  id
+                  createdAt
+                  name {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  avatarLetters
+                }
+                total
+                hasMore
+                canCreate
+              }
+              education {
+                canRead
+                items {
+                  id
+                  createdAt
+                  degree {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  major {
+                    canRead
+                    canEdit
+                    value
+                  }
+                  institution {
+                    canRead
+                    canEdit
+                    value
+                  }
+                }
+                total
+                hasMore
+                canCreate
+              }
+            }
+          }
+          createdBy {
+            id
+            fullName
+            firstName
+            avatarLetters
+            createdAt
+            email {
+              canRead
+              canEdit
+              value
+            }
+            realFirstName {
+              canRead
+              canEdit
+              value
+            }
+            realLastName {
+              canRead
+              canEdit
+              value
+            }
+            displayFirstName {
+              canRead
+              canEdit
+              value
+            }
+            displayLastName {
+              canRead
+              canEdit
+              value
+            }
+            phone {
+              canRead
+              canEdit
+              value
+            }
+            about {
+              canRead
+              canEdit
+              value
+            }
+            status {
+              canRead
+              canEdit
+              value
+            }
+            roles {
+              canRead
+              canEdit
+              value
+            }
+            title {
+              canRead
+              canEdit
+              value
+            }
+            timezone {
+              canRead
+              canEdit
+              value {
+                name
+                lat
+                long
+                countries {
+                  code
+                  name
+                  zones {
+                    name
+                    lat
+                    long
+                    countries {
+                      code
+                    }
+                  }
+                }
+              }
+            }
+            unavailabilities {
+              canRead
+              items {
+                id
+                createdAt
+                description {
+                  canRead
+                  canEdit
+                  value
+                }
+                start
+                end
+              }
+              total
+              hasMore
+              canCreate
+            }
+            organizations {
+              canRead
+              items {
+                id
+                createdAt
+                name {
+                  canRead
+                  canEdit
+                  value
+                }
+                avatarLetters
+              }
+              total
+              hasMore
+              canCreate
+            }
+            education {
+              canRead
+              items {
+                id
+                createdAt
+                degree {
+                  canRead
+                  canEdit
+                  value
+                }
+                major {
+                  canRead
+                  canEdit
+                  value
+                }
+                institution {
+                  canRead
+                  canEdit
+                  value
+                }
+              }
+              total
+              hasMore
+              canCreate
+            }
+          }
+          children {
+            total
+            hasMore
+            items {
+              id
+              createdAt
+              type
+              name
+              createdBy {
+                id
+                fullName
+                firstName
+                avatarLetters
+                createdAt
+                email {
+                  canRead
+                  canEdit
+                  value
+                }
+                realFirstName {
+                  canRead
+                  canEdit
+                  value
+                }
+                realLastName {
+                  canRead
+                  canEdit
+                  value
+                }
+                displayFirstName {
+                  canRead
+                  canEdit
+                  value
+                }
+                displayLastName {
+                  canRead
+                  canEdit
+                  value
+                }
+                phone {
+                  canRead
+                  canEdit
+                  value
+                }
+                about {
+                  canRead
+                  canEdit
+                  value
+                }
+                status {
+                  canRead
+                  canEdit
+                  value
+                }
+                roles {
+                  canRead
+                  canEdit
+                  value
+                }
+                title {
+                  canRead
+                  canEdit
+                  value
+                }
+                timezone {
+                  canRead
+                  canEdit
+                  value {
+                    name
+                    lat
+                    long
+                    countries {
+                      code
+                      name
+                      zones {
+                        name
+                        lat
+                        long
+                        countries {
+                          code
+                        }
+                      }
+                    }
+                  }
+                }
+                unavailabilities {
+                  canRead
+                  items {
+                    id
+                    createdAt
+                    description {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    start
+                    end
+                  }
+                  total
+                  hasMore
+                  canCreate
+                }
+                organizations {
+                  canRead
+                  items {
+                    id
+                    createdAt
+                    name {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    avatarLetters
+                  }
+                  total
+                  hasMore
+                  canCreate
+                }
+                education {
+                  canRead
+                  items {
+                    id
+                    createdAt
+                    degree {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    major {
+                      canRead
+                      canEdit
+                      value
+                    }
+                    institution {
+                      canRead
+                      canEdit
+                      value
+                    }
+                  }
+                  total
+                  hasMore
+                  canCreate
+                }
+              }
+              parents {
+                id
+                type
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

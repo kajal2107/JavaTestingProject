@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="End 2 End Cases" thread-count="3" parallel="classes">
+    <parameter name="browser" value="chrome"/>
+    <test name="Cord">
+        <classes>
+
+            <!--Account-->
+            <class name="cord.account.ChangePasswordTests"/>
+            <class name="cord.account.RegistrationTests"/>
+            <class name="cord.account.LoginTests"/>
+
+            <!--People-->
+            <class name="cord.people.CreatePeopleTests"/>
+            <class name="cord.people.UpdatePeopleTests"/>
+
+            <!--Languages-->
+            <class name="cord.languages.CreateLanguageTests"/>
+            <class name="cord.languages.UpdateLanguageTests"/>
+
+            <!--ApprovalFlow-->
+            <class name="cord.projects.approvalFlow.CreateProjectConsultantTests"/>
+            <class name="cord.projects.approvalFlow.CreateProjectControllerTests"/>
+            <class name="cord.projects.approvalFlow.CreateProjectFaControllerTests"/>
+            <class name="cord.projects.approvalFlow.CreateProjectFieldOperationsDirectorTests"/>
+            <class name="cord.projects.approvalFlow.CreateProjectFinancialAnalystTests"/>
+            <class name="cord.projects.approvalFlow.CreateProjectIAdminTests"/>
+            <class name="cord.projects.approvalFlow.CreateProjectImFpmTests"/>
+            <class name="cord.projects.approvalFlow.CreateProjectInternTests"/>
+            <class name="cord.projects.approvalFlow.CreateProjectProjectManagerTests"/>
+            <class name="cord.projects.approvalFlow.CreateProjectRdFodTests"/>
+            <class name="cord.projects.approvalFlow.CreateProjectRdProjectManagerTests"/>
+            <class name="cord.projects.approvalFlow.CreateProjectRegionalDirectorTests"/>
+
+            <!--Partner-->
+            <class name="cord.partners.CreatePartnerTests"/>
+            <class name="cord.partners.UpdatePartnerTests"/>
+            <class name="cord.partners.PartnersSortListTests"/>
+
+            <!--Project-->
+            <class name="cord.projects.CreateProjectTests"/>
+            <class name="cord.projects.updateProject.UpdateProjectBudgetTests"/>
+            <class name="cord.projects.updateProject.UpdateProjectFileTests"/>
+            <class name="cord.projects.updateProject.UpdateProjectPartnershipsTests"/>
+            <class name="cord.projects.updateProject.UpdateProjectsTests"/>
+            <class name="cord.projects.updateProject.UpdateProjectTeamMembersTests"/>
+
+            <!--Location-->
+            <class name="cord.location.CreateUpdateLocationTests"/>
+
+            <!--LanguageEngagement-->
+            <class name="cord.projects.languageEngagement.CreateLanguageEngagementTests"/>
+            <class name="cord.projects.languageEngagement.goal.CreateGoalEthnoArtTests"/>
+            <class name="cord.projects.languageEngagement.goal.CreateGoalFilmTests"/>
+            <class name="cord.projects.languageEngagement.goal.CreateGoalOtherTests"/>
+            <class name="cord.projects.languageEngagement.goal.CreateGoalScriptureTests"/>
+            <class name="cord.projects.languageEngagement.goal.CreateGoalScriptureWithProgressReportTests"/>
+            <class name="cord.projects.languageEngagement.goal.CreateGoalStoryTests"/>
+
+            <!--InternshipEngagement-->
+            <class name="cord.projects.internshipEngagement.CreateInternshipEngagementTests"/>
+            <class name="cord.projects.internshipEngagement.UpdateInternshipEngagementTests"/>
+
+            <!--RolePermissionFlow-->
+            <class name="cord.projects.rolePermissionFlow.AdministratorTests"/>
+            <class name="cord.projects.rolePermissionFlow.ConsultantManagerTests"/>
+            <class name="cord.projects.rolePermissionFlow.ConsultantTests"/>
+            <class name="cord.projects.rolePermissionFlow.ControllerTests"/>
+            <class name="cord.projects.rolePermissionFlow.FieldOperationsDirectorTests"/>
+            <class name="cord.projects.rolePermissionFlow.FinancialAnalystTests"/>
+            <class name="cord.projects.rolePermissionFlow.FundraisingTests"/>
+            <class name="cord.projects.rolePermissionFlow.LeadershipTests"/>
+            <class name="cord.projects.rolePermissionFlow.LiaisonTests"/>
+            <class name="cord.projects.rolePermissionFlow.MarketingTests"/>
+            <class name="cord.projects.rolePermissionFlow.ProjectManagerTests"/>
+            <class name="cord.projects.rolePermissionFlow.RegionalDirectorTests"/>
+            <class name="cord.projects.rolePermissionFlow.StaffMemberTests"/>
+
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+
+
+
+

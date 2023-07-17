@@ -1,0 +1,220 @@
+{
+  "users": [
+    {
+      "description": "password",
+      "email": "passwordtest@mail.com",
+      "password": "123456",
+      "newPassword": "456789",
+      "name": "Password User"
+    },
+    {
+      "description": "Admin",
+      "email": "devops@tsco.org",
+      "password": "admin",
+      "name": "Admin User",
+      "realFirstName": "Root",
+      "realLastName": "Admin",
+      "userRoles": [
+        "Administrator"
+      ]
+    },
+    {
+      "description": "rd",
+      "email": "regionaldirector@yopmail.com",
+      "password": "123456",
+      "name": "RegionalDirector User",
+      "realFirstName": "RegionalDirector",
+      "realLastName": "rd",
+      "userRoles": [
+        "Regional Director"
+      ]
+    },
+    {
+      "description": "fd",
+      "email": "fundraising@yopmail.com",
+      "password": "123456",
+      "name": "Fundraising User",
+      "realFirstName": "Fundraising",
+      "realLastName": "fd",
+      "userRoles": [
+        "Fundraising"
+      ]
+    },
+    {
+      "description": "mrkt",
+      "email": "marketing@yopmail.com",
+      "password": "123456",
+      "name": "Marketing User",
+      "realFirstName": "Marketing",
+      "realLastName": "mrkt",
+      "userRoles": [
+        "Marketing"
+      ]
+    },
+    {
+      "description": "stf",
+      "email": "staffmember@yopmail.com",
+      "password": "123456",
+      "name": "StaffMember User",
+      "realFirstName": "StaffMember",
+      "realLastName": "stf",
+      "userRoles": [
+        "StaffMember"
+      ]
+    },
+    {
+      "description": "leader",
+      "email": "leadership@yopmail.com",
+      "password": "123456",
+      "name": "Leadership User",
+      "realFirstName": "Leadership",
+      "realLastName": "leader",
+      "userRoles": [
+        "Leadership"
+      ]
+    },
+    {
+      "description": "lsn",
+      "email": "liaison@yopmail.com",
+      "password": "123456",
+      "name": "Liaison User",
+      "realFirstName": "Liaison",
+      "realLastName": "lsn",
+      "userRoles": [
+        "Liaison"
+      ]
+    },
+    {
+      "description": "rdFod",
+      "email": "regionalDirector_fieldOperationsDirector@yopmail.com",
+      "password": "123456",
+      "name": "rdFod User",
+      "realFirstName": "RegionalDirector_FieldOperationsDirector",
+      "realLastName": "rd_fod",
+      "userRoles": [
+        "Regional Director",
+        "Field Operations Director"
+      ]
+    },
+    {
+      "description": "rdFpm",
+      "email": "regionalDirector_projectManager@yopmail.com",
+      "password": "123456",
+      "name": "rdFpm User"
+    },
+    {
+      "description": "imFpm",
+      "email": "intern_projectManager@yopmail.com",
+      "password": "123456",
+      "name": "imFpm User",
+      "realFirstName": "Intern_ProjectManager",
+      "realLastName": "im_fpm",
+      "roleOne": "Project Manager",
+      "roleSecond": "Intern",
+      "userRoles": [
+        "Project Manager",
+        "Intern"
+      ]
+    },
+    {
+      "description": "fpm",
+      "email": "projectmanager@yopmail.com",
+      "password": "123456",
+      "name": "ProjectManager User",
+      "realFirstName": "ProjectManager",
+      "realLastName": "fpm",
+      "userRoles": [
+        "Project Manager"
+      ]
+    },
+    {
+      "description": "faController",
+      "email": "financialAnalyst_Controller@yopmail.com",
+      "password": "123456",
+      "name": "faController User",
+      "realFirstName": "FinancialAnalyst_Controller",
+      "realLastName": "FA_Controller",
+      "userRoles": [
+        "Financial Analyst",
+        "Controller"
+      ]
+    },
+    {
+      "description": "fa",
+      "email": "financialanalyst@yopmail.com",
+      "password": "123456",
+      "name": "fa User",
+      "realFirstName": "FinancialAnalyst",
+      "realLastName": "fa",
+      "userRoles": [
+        "Financial Analyst"
+      ]
+    },
+    {
+      "description": "lfa",
+      "email": "leadfinancialanalyst@yopmail.com",
+      "password": "123456",
+      "name": "lfa User",
+      "realFirstName": "LeadFinancialAnalyst",
+      "realLastName": "lfa",
+      "userRoles": [
+        "Lead Financial Analyst"
+      ]
+    },
+    {
+      "description": "consultant",
+      "email": "consultant@yopmail.com",
+      "password": "123456",
+      "name": "consultant User",
+      "realFirstName": "RoleConsultant",
+      "realLastName": "roleCons",
+      "userRoles": [
+        "Consultant"
+      ]
+    },
+    {
+      "description": "consultantManager",
+      "email": "consultantmanager@yopmail.com",
+      "password": "123456",
+      "name": "consultantManager User",
+      "realFirstName": "ConsultantManager",
+      "realLastName": "consMng",
+      "userRoles": [
+        "Consultant Manager"
+      ]
+    },
+    {
+      "description": "intern",
+      "email": "intern@yopmail.com",
+      "password": "123456",
+      "name": "intern User",
+      "realFirstName": "Intern",
+      "realLastName": "im",
+      "userRoles": [
+        "Intern"
+      ]
+    },
+    {
+      "description": "controller",
+      "email": "controller@yopmail.com",
+      "password": "123456",
+      "name": "controller User",
+      "realFirstName": "Controller",
+      "realLastName": "cont",
+      "userRoles": [
+        "Controller"
+      ]
+    },
+    {
+      "description": "fod",
+      "email": "fieldoperationsdirector@yopmail.com",
+      "password": "123456",
+      "name": "fod User",
+      "realFirstName": "FieldOperationsDirector",
+      "realLastName": "fod",
+      "userRoles": [
+        "Field Operations Director"
+      ]
+    }
+  ]
+}
